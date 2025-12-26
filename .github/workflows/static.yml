@@ -44,6 +44,9 @@ jobs:
           cache: pnpm
 
       - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build        
         run: pnpm build
         
       - name: Setup Pages
